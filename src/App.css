@@ -1,0 +1,58 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Fondo claro */
+  color: #333; /* Texto oscuro para contraste */
+  min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+}
+
+h1 {
+  color: #0056b3; /* Título en azul oscuro */
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: 
+    "catalogs contributors"
+    "producttypes eventtypes"
+    "magnitudetypes magnitudetypes";
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-section {
+  padding: 20px;
+  background-color: #ffffff; /* Fondo blanco para las secciones */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle efecto */
+  text-align: left;
+}
+
+.grid-section h2 {
+  color: #00796b; /* Color verde oscuro para los títulos de las secciones */
+}
+
+table {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  border-collapse: collapse; /* Elimina el espacio entre bordes */
+}
+
+th, td {
+  padding: 12px; /* Espaciado interno de las celdas */
+  border: 1px solid #ddd; /* Borde de las celdas */
+  text-align: left; /* Alineación a la izquierda */
+}
+
+th {
+  background-color: #e0f7fa; /* Fondo para las cabeceras */
+  color: #00796b; /* Color de texto para las cabeceras */
+}
+
+.error {
+  color: #d32f2f; /* Color rojo para mensajes de error */
+  font-weight: bold;
+}
